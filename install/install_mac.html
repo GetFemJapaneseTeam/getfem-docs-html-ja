@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '5.3',
+        VERSION:     '5.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  false
@@ -172,10 +172,10 @@ together with at least <tt class="docutils literal"><span class="pre">numpy</spa
 <li><p class="first">If you want to use a specific <strong>BLAS</strong> library, you may have to
 supply the necessary link flags and libs to the configure script
 with:</p>
-<div class="highlight-c++"><pre>$ ./configure BLAS_LIBS=&quot;-L/path/to/lib -lfoo -lbar ....etc&quot;</pre>
+<div class="highlight-c++"><pre>$ ./configure BLAS_LIBS="-L/path/to/lib -lfoo -lbar ....etc"</pre>
 </div>
 <p>for example:</p>
-<div class="highlight-c++"><pre>$ ./configure BLAS_LIBS=&quot;-L/usr/lib/sse2/atlas -lblas&quot;</pre>
+<div class="highlight-c++"><pre>$ ./configure BLAS_LIBS="-L/usr/lib/sse2/atlas -lblas"</pre>
 </div>
 </li>
 <li><p class="first">If you want to set the prefix directory where to install the library
@@ -263,7 +263,7 @@ non-GNU compiler, gcc/g++ (&gt;= 4.8) should be a safe solution.</p>
 <tt class="docutils literal"><span class="pre">exec</span> <span class="pre">loader.sce;</span></tt></li>
 <li>You can try to launch a demo with:
 <tt class="docutils literal"><span class="pre">cd</span> <span class="pre">demos;</span></tt>
-<tt class="docutils literal"><span class="pre">exec</span> <span class="pre">demostatic_contact.sce;</span></tt></li>
+<tt class="docutils literal"><span class="pre">exec</span> <span class="pre">demo_static_contact.sce;</span></tt></li>
 </ul>
 </div></blockquote>
 </div>
@@ -355,7 +355,7 @@ non-GNU compiler, gcc/g++ (&gt;= 4.8) should be a safe solution.</p>
       </ul>
     </div>
     <div class="footer">
-      &copy; <a href="../copyright.html">Copyright</a> 2004-2018 GetFEM++ project.
+      &copy; <a href="../copyright.html">Copyright</a> 2004-2017 GetFEM++ project.
     </div>
   </body>
 </html>

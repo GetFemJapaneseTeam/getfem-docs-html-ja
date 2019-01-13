@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '5.3',
+        VERSION:     '5.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  false
@@ -155,14 +155,14 @@
 <div class="math">
 <p><img src="../images/math/d0fd930f89710672af61587bb3203789b1a8c3ff.png" alt="-\mbox{div } \sigma(u) = f, \mbox{ in } \Omega,"/></p>
 </div><p>等価線形弾性の場合には、ベクトル場 <img class="math" src="../images/math/9ad99798ec4c38e165cf517cb9e02b1c9e824103.png" alt="u" style="vertical-align: 0px"/> と <img class="math" src="../images/math/f6441ba16f1e778b63716920d7793e69859a6dcd.png" alt="\sigma(u) = \lambda \mbox{div } u + \mu (\nabla u + (\nabla u)^T)" style="vertical-align: -4px"/> が考えられています。弱定式化の記述に対応する構築文字列は以下のように書くことができます。</p>
-<div class="highlight-c++"><pre>(lambda*Trace(Grad_u)*Id(qdim(u)) + mu*(Grad_u+Grad_u&#x27;)):Grad_Test_u - my_f.Test_u</pre>
+<div class="highlight-c++"><pre>(lambda*Trace(Grad_u)*Id(qdim(u)) + mu*(Grad_u+Grad_u')):Grad_Test_u - my_f.Test_u</pre>
 </div>
 <p>または次の通りです。</p>
-<div class="highlight-c++"><pre>lambda*Div_u*Div_Test_u + mu*(Grad_u + Grad_u&#x27;):Grad_Test_u - my_f.Test_u</pre>
+<div class="highlight-c++"><pre>lambda*Div_u*Div_Test_u + mu*(Grad_u + Grad_u'):Grad_Test_u - my_f.Test_u</pre>
 </div>
 <p>ここでもまた、いくつかの問題を結合するために、係数 <tt class="docutils literal"><span class="pre">lambda</span></tt> と <tt class="docutils literal"><span class="pre">mu</span></tt> に定数、あるいはスカラーフィールドや陽表現、あるいは他の変数からの式を与えますことができます。たとえば、係数が温度場に依存する場合、次のように書くことができます。</p>
 <div class="highlight-c++"><pre>my_f1(theta)*Div_u*Div_Test_u
-+ my_f2(theta)*(Grad_u + Grad_u&#x27;):Grad_Test_u - my_f.Grad_Test_u</pre>
++ my_f2(theta)*(Grad_u + Grad_u'):Grad_Test_u - my_f.Grad_Test_u</pre>
 </div>
 <p>ここで、 <tt class="docutils literal"><span class="pre">theta</span></tt> は、Poisson方程式の解である温度です。</p>
 <div class="highlight-c++"><div class="highlight"><pre><span class="n">Grad_theta</span><span class="p">.</span><span class="n">Grad_Test_theta</span> <span class="o">-</span> <span class="n">my_f</span><span class="o">*</span><span class="n">Grad_Test_theta</span>
@@ -1028,7 +1028,7 @@ Additionally, note that, when integrating on a level-set with a ``mesh_im_level_
       </ul>
     </div>
     <div class="footer">
-      &copy; <a href="../copyright.html">Copyright</a> 2004-2018 GetFEM++ project.
+      &copy; <a href="../copyright.html">Copyright</a> 2004-2017 GetFEM++ project.
     </div>
   </body>
 </html>

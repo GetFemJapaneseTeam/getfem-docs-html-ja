@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '5.3',
+        VERSION:     '5.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  false
@@ -29,7 +29,7 @@
     <link rel="copyright" title="著作権" href="../copyright.html" />
     <link rel="top" title="GetFEM++" href="../index.html" />
     <link rel="up" title="GetFEM++ の導入" href="index.html" />
-    <link rel="next" title="接触する車輪の例 (2 つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)" href="wheel.html" />
+    <link rel="next" title="接触する車輪の例 (2つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)" href="wheel.html" />
     <link rel="prev" title="GetFEM++ の基本的な使い方" href="basic_usage.html" />
     <link rel="shortcut icon" type="image/png" href="../static/icon.png" />
  
@@ -43,7 +43,7 @@
           <a href="../genindex.html" title="総合索引"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="wheel.html" title="接触する車輪の例 (2 つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)"
+          <a href="wheel.html" title="接触する車輪の例 (2つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)"
              accesskey="N">次へ</a> |</li>
         <li class="right" >
           <a href="basic_usage.html" title="GetFEM++ の基本的な使い方"
@@ -132,7 +132,7 @@ u = 0 ~~ \mbox{ on the left lateral face},
 <p>次に、問題を近似する <em>GetFEM++</em> の使用法についての詳細なプレゼンテーションを行います。C++、Python、Scilab と Matlab プログラムを同時に構築します。Matlab および Scilab プログラムでは、オブジェクト指向コマンドを使用しません (使用する方法は <a class="reference internal" href="../matlab/oocmd.html#mlab-oocmd"><em>GetFEM++ OO-commands</em></a> を参照してください)</p>
 <div class="section" id="initialization">
 <h3>初期化<a class="headerlink" href="#initialization" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>まず、C++ では、モデルオブジェクト、ジェネリックアセンブリ、線形インターフェイス (Gmm++) 、実験用メッシュ、およびエクスポート機能に対して、特定の数のヘッダーを含めることができます。Python の場合、これは簡単です。 <em>GetFEM++</em> グローバルにインポートすることができます (numpy もインポートする必要があります)。Scilab の場合、ライブラリは Scilab コンソールに最初にロードされます (ここでは説明しません)、Matlab の場合、すべての <em>GetFEM++</em> 変数をクリアすることを可能にする <cite>gf_workspace(&#8216;clear all&#8217;)</cite> を除いて、何も必要ありません。</p>
+<p>まず、C++ では、モデルオブジェクト、ジェネリックアセンブリ、線形代数インターフェイス (Gmm++) 、実験用メッシュ、およびエクスポート機能に対して、特定の数のヘッダーを含めることができます。Python の場合、これは簡単です。 <em>GetFEM++</em> をグローバルにインポートすることができます (numpy もインポートする必要があります)。Scilab の場合、ライブラリは Scilab コンソールに最初にロードされます (ここでは説明しません)、Matlab の場合、すべての <em>GetFEM++</em> 変数をクリアする <cite>gf_workspace(&#8216;clear all&#8217;)</cite> を除けば、何も必要ありません。</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="15%" />
@@ -1092,7 +1092,7 @@ u = 0 ~~ \mbox{ on the left lateral face},
                         title="前の章へ"><em>GetFEM++</em> の基本的な使い方</a></p>
   <h4>次のトピックへ</h4>
   <p class="topless"><a href="wheel.html"
-                        title="次の章へ">接触する車輪の例 (2 つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)</a></p>            <h3>Download</h3>
+                        title="次の章へ">接触する車輪の例 (2つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)</a></p>            <h3>Download</h3>
             <p><a href="../download.html">Download GetFEM++ </a></p>
 	    <h3>Main documentations</h3>
 	    <ul>
@@ -1137,7 +1137,7 @@ u = 0 ~~ \mbox{ on the left lateral face},
           <a href="../genindex.html" title="総合索引"
              >索引</a></li>
         <li class="right" >
-          <a href="wheel.html" title="接触する車輪の例 (2 つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)"
+          <a href="wheel.html" title="接触する車輪の例 (2つのメッシュ間のアセンブリ、変換、固定サイズ変数の使用)"
              >次へ</a> |</li>
         <li class="right" >
           <a href="basic_usage.html" title="GetFEM++ の基本的な使い方"
@@ -1150,7 +1150,7 @@ u = 0 ~~ \mbox{ on the left lateral face},
       </ul>
     </div>
     <div class="footer">
-      &copy; <a href="../copyright.html">Copyright</a> 2004-2018 GetFEM++ project.
+      &copy; <a href="../copyright.html">Copyright</a> 2004-2017 GetFEM++ project.
     </div>
   </body>
 </html>

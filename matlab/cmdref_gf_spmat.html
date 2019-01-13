@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '5.3',
+        VERSION:     '5.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  false
@@ -65,13 +65,13 @@
   <div class="section" id="gf-spmat">
 <h1>gf_spmat<a class="headerlink" href="#gf-spmat" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p><strong>Synopsis</strong></p>
-<div class="highlight-python"><pre>SM = gf_spmat(&#x27;empty&#x27;, int m [, int n])
-SM = gf_spmat(&#x27;copy&#x27;, mat K [,  I [,  J]])
-SM = gf_spmat(&#x27;identity&#x27;, int n)
-SM = gf_spmat(&#x27;mult&#x27;, spmat A, spmat B)
-SM = gf_spmat(&#x27;add&#x27;, spmat A, spmat B)
-SM = gf_spmat(&#x27;diag&#x27;, mat D [, ivec E [, int n [,int m]]])
-SM = gf_spmat(&#x27;load&#x27;,&#x27;hb&#x27;|&#x27;harwell-boeing&#x27;|&#x27;mm&#x27;|&#x27;matrix-market&#x27;, string filename)</pre>
+<div class="highlight-python"><pre>SM = gf_spmat('empty', int m [, int n])
+SM = gf_spmat('copy', mat K [,  I [,  J]])
+SM = gf_spmat('identity', int n)
+SM = gf_spmat('mult', spmat A, spmat B)
+SM = gf_spmat('add', spmat A, spmat B)
+SM = gf_spmat('diag', mat D [, ivec E [, int n [,int m]]])
+SM = gf_spmat('load','hb'|'harwell-boeing'|'mm'|'matrix-market', string filename)</pre>
 </div>
 <p><strong>Description :</strong></p>
 <p>General constructor for spmat objects.</p>
@@ -103,7 +103,7 @@ matrices to CSC).</p>
 <div><p>Duplicate a matrix <cite>K</cite> (which might be a spmat or a native matlab
 sparse matrix). If index <cite>I</cite> and/or <cite>J</cite> are given, the matrix will
 be a submatrix of <cite>K</cite>. For example:</p>
-<div class="highlight-python"><pre>m = gf_spmat(&#x27;copy&#x27;, sprand(50,50,.1), 1:40, [6 7 8 3 10])</pre>
+<div class="highlight-python"><pre>m = gf_spmat('copy', sprand(50,50,.1), 1:40, [6 7 8 3 10])</pre>
 </div>
 <p>will return a 40x5 matrix.</p>
 </div></blockquote>
@@ -204,7 +204,7 @@ See also <tt class="docutils literal"><span class="pre">gf_util('load</span> <sp
       </ul>
     </div>
     <div class="footer">
-      &copy; <a href="../copyright.html">Copyright</a> 2004-2018 GetFEM++ project.
+      &copy; <a href="../copyright.html">Copyright</a> 2004-2017 GetFEM++ project.
     </div>
   </body>
 </html>

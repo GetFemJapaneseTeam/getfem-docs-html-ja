@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '5.3',
+        VERSION:     '5.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  false
@@ -30,7 +30,7 @@
     <link rel="top" title="GetFEM++" href="../index.html" />
     <link rel="up" title="Gmm++ Library" href="index.html" />
     <link rel="next" title="How to disable verifications" href="noverif.html" />
-    <link rel="prev" title="First steps with Gmm++" href="first-step.html" />
+    <link rel="prev" title="Gmm++ の最初のステップ" href="first-step.html" />
     <link rel="shortcut icon" type="image/png" href="../static/icon.png" />
  
 
@@ -46,7 +46,7 @@
           <a href="noverif.html" title="How to disable verifications"
              accesskey="N">次へ</a> |</li>
         <li class="right" >
-          <a href="first-step.html" title="First steps with Gmm++"
+          <a href="first-step.html" title="Gmm++ の最初のステップ"
              accesskey="P">前へ</a> |</li>
         <li><a href="https://savannah.nongnu.org/projects/getfem" <img src="../static/icon.png" alt=""
                  style="vertical-align: middle; margin-top: -1px"/></li></a>
@@ -103,12 +103,12 @@ gmm::linalg_traits&lt;V&gt;::do_clear(v) --&gt; make a clear on the vector
 
 gmm::linalg_traits&lt;V&gt;::access(o, it, ite, i) --&gt; return the ith component or a
                                         reference on the ith component. o is a
-                                        pointer o type ``origin_type *&#x27;&#x27; or
-                                        ``const origin_type *&#x27;&#x27;.
+                                        pointer o type ``origin_type *'' or
+                                        ``const origin_type *''.
 
 gmm::linalg_traits&lt;V&gt;::clear(o, it, ite) --&gt; clear the vector. o is a
-                                        pointer o type ``origin_type *&#x27;&#x27; or
-                                        ``const origin_type *&#x27;&#x27;.</pre>
+                                        pointer o type ``origin_type *'' or
+                                        ``const origin_type *''.</pre>
 </div>
 <p>and for a matrix type:</p>
 <div class="highlight-c++"><div class="highlight"><pre><span class="k">typename</span> <span class="n">gmm</span><span class="o">::</span><span class="n">linalg_traits</span><span class="o">&lt;</span><span class="n">M</span><span class="o">&gt;::</span><span class="n">value_type</span>     <span class="o">--&gt;</span> <span class="n">type</span> <span class="n">of</span> <span class="n">the</span> <span class="n">components</span> <span class="n">of</span> <span class="n">the</span>
@@ -206,7 +206,7 @@ while (it1 != ite1 &amp;&amp; it2 != ite2) \{  // loops on the components
 
   ...
 
-  std::cout &lt;&lt; &quot;norm of row &quot; &lt;&lt; i &lt;&lt; &quot; : &quot; &lt;&lt; vect_norm2(row) &lt;&lt; std::endl;
+  std::cout &lt;&lt; "norm of row " &lt;&lt; i &lt;&lt; " : " &lt;&lt; vect_norm2(row) &lt;&lt; std::endl;
 \}</pre>
 </div>
 <p>But you can also use iterators, like that:</p>
@@ -219,7 +219,7 @@ for (; it != ite; ++it) \{
 
   ...
 
-  std::cout &lt;&lt; &quot;norm of row &quot; &lt;&lt; i &lt;&lt; &quot; : &quot; &lt;&lt; vect_norm2(row) &lt;&lt; std::endl;
+  std::cout &lt;&lt; "norm of row " &lt;&lt; i &lt;&lt; " : " &lt;&lt; vect_norm2(row) &lt;&lt; std::endl;
 \}</pre>
 </div>
 </div>
@@ -283,7 +283,7 @@ template &lt;class L&gt; inline size_type nnz(const L&amp; l, col_major) \{
 
   <h4>前のトピックへ</h4>
   <p class="topless"><a href="first-step.html"
-                        title="前の章へ">First steps with <em>Gmm++</em></a></p>
+                        title="前の章へ"><em>Gmm++</em> の最初のステップ</a></p>
   <h4>次のトピックへ</h4>
   <p class="topless"><a href="noverif.html"
                         title="次の章へ">How to disable verifications</a></p>            <h3>Download</h3>
@@ -334,7 +334,7 @@ template &lt;class L&gt; inline size_type nnz(const L&amp; l, col_major) \{
           <a href="noverif.html" title="How to disable verifications"
              >次へ</a> |</li>
         <li class="right" >
-          <a href="first-step.html" title="First steps with Gmm++"
+          <a href="first-step.html" title="Gmm++ の最初のステップ"
              >前へ</a> |</li>
         <li><a href="https://savannah.nongnu.org/projects/getfem" <img src="../static/icon.png" alt=""
                  style="vertical-align: middle; margin-top: -1px"/></li></a>
@@ -344,7 +344,7 @@ template &lt;class L&gt; inline size_type nnz(const L&amp; l, col_major) \{
       </ul>
     </div>
     <div class="footer">
-      &copy; <a href="../copyright.html">Copyright</a> 2004-2018 GetFEM++ project.
+      &copy; <a href="../copyright.html">Copyright</a> 2004-2017 GetFEM++ project.
     </div>
   </body>
 </html>

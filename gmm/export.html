@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Input and output with Harwell-Boeing and Matrix Market formats &mdash; GetFEM++</title>
+    <title>Harwell-BoeingとMatrix Marketフォーマットによる入力と出力 &mdash; GetFEM++</title>
     
     <link rel="stylesheet" href="../static/getfem.css" type="text/css" />
     <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '5.3',
+        VERSION:     '5.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  false
@@ -62,14 +62,14 @@
           <div class="body">
             
   <div class="section" id="input-and-output-with-harwell-boeing-and-matrix-market-formats">
-<span id="gmm-export"></span><h1>Input and output with Harwell-Boeing and Matrix Market formats<a class="headerlink" href="#input-and-output-with-harwell-boeing-and-matrix-market-formats" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>Including the file <tt class="docutils literal"><span class="pre">gmm/gmm_inoutput.h</span></tt> you will be able to load and save matrices with Harwell-Boeing and Matrix Market formats. Concerning the Harwell-Boeing format, only the type <tt class="docutils literal"><span class="pre">gmm::csc_matrix&lt;double&gt;</span></tt> and <tt class="docutils literal"><span class="pre">gmm::csc_matrix&lt;std::complex&lt;double&gt;</span> <span class="pre">&gt;</span></tt> has been interfaced, so you can execute:</p>
+<span id="gmm-export"></span><h1>Harwell-BoeingとMatrix Marketフォーマットによる入力と出力<a class="headerlink" href="#input-and-output-with-harwell-boeing-and-matrix-market-formats" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>`` gmm / gmm_inoutput.h``ファイルを含めて、Harwell-BoeingとMatrix Marketフォーマットで行列をロードして保存することができます。 Harwell-Boeingフォーマットに関しては、 `` gmm :: csc_matrix &lt;double&gt; <a href="#id1"><span class="problematic" id="id2">``</span></a>と `` gmm :: csc_matrix &lt;std :: complex &lt;double&gt;&gt; <a href="#id3"><span class="problematic" id="id4">``</span></a>型のみがインタフェースされているので、</p>
 <div class="highlight-c++"><div class="highlight"><pre><span class="n">Harwell_Boeing_save</span><span class="p">(</span><span class="s">&quot;filename&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="c1">// save the matrix A .</span>
 <span class="n">Harwell_Boeing_load</span><span class="p">(</span><span class="s">&quot;filename&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="c1">// load the matrix A.</span>
 </pre></div>
 </div>
-<p>If <tt class="docutils literal"><span class="pre">A</span></tt> is not a  <tt class="docutils literal"><span class="pre">gmm::csc_matrix&lt;double&gt;</span></tt> or a <tt class="docutils literal"><span class="pre">gmm::csc_matrix&lt;std::complex&lt;double&gt;</span> <span class="pre">&gt;</span></tt> a copy is made.</p>
-<p>Concerning the Matrix Market format, it is possible to save a <tt class="docutils literal"><span class="pre">gmm::csc_matrix&lt;double&gt;</span></tt> or a  <tt class="docutils literal"><span class="pre">gmm::csc_matrix&lt;std::complex&lt;double&gt;</span> <span class="pre">&gt;</span></tt> and to load a <tt class="docutils literal"><span class="pre">gmm::row_matrix&lt;VECT&gt;</span></tt> or a <tt class="docutils literal"><span class="pre">gmm::col_matrix&lt;VECT&gt;</span></tt>:</p>
+<p>`` A``が `` gmm :: csc_matrix &lt;double&gt; <a href="#id1"><span class="problematic" id="id2">``</span></a>または `` gmm :: csc_matrix &lt;std :: complex &lt;double&gt;&gt; <a href="#id3"><span class="problematic" id="id4">``</span></a>でなければ、コピーが作成されます。</p>
+<p>Matrix Marketフォーマットに関しては、 `` gmm :: csc_matrix &lt;double&gt; <a href="#id1"><span class="problematic" id="id2">``</span></a>または `` gmm :: csc_matrix &lt;std :: complex &lt;double&gt; &#8216;<a href="#id3"><span class="problematic" id="id4">``</span></a>を保存し、 `` gmm： ：row_matrix &lt;VECT&gt; <a href="#id5"><span class="problematic" id="id6">``</span></a>または `` gmm :: col_matrix &lt;VECT&gt; ``</p>
 <div class="highlight-c++"><div class="highlight"><pre><span class="n">MatrixMarket_save</span><span class="p">(</span><span class="s">&quot;filename&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="c1">// save a csc_matrix.</span>
 <span class="n">MatrixMarket_load</span><span class="p">(</span><span class="s">&quot;filename&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="c1">// load a row_matrix or a col_matrix</span>
 </pre></div>
@@ -148,7 +148,7 @@
       </ul>
     </div>
     <div class="footer">
-      &copy; <a href="../copyright.html">Copyright</a> 2004-2018 GetFEM++ project.
+      &copy; <a href="../copyright.html">Copyright</a> 2004-2017 GetFEM++ project.
     </div>
   </body>
 </html>
